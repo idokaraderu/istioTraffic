@@ -13,5 +13,5 @@ sedTarget="httpbin-000"
 for i in $(seq $podLimit)
 do
     paddedNumber=$(printf %03d $i)
-    sed -e "s/$sedTarget/httpbin-$paddedNumber/g" $manifestPath | kubectl $namespace apply -f -
+    sed -e "s/$sedTarget/httpbin-$paddedNumber/g" $manifestPath | kubectl -n $namespace apply -f -
 done
