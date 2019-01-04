@@ -27,9 +27,11 @@ Data of traffic istio-proxy sent
 
 * [deploy script](./dummyPod)
     ```sh
-    # deploy 50 httpbin pods
+    # Usage
     cd ./dummyPod
-    ./deploy_pod.sh 50
+    ./deploy_pod.sh 50 #deploy 50 httpbin pods
     ```
-* [pcap data of istio-proxy without any access](istio-proxy.pcap)
-* [pcap data of istio-proxy with access to httpbin container every second](istio-proxy-with-pod-access.pcap)
+* [k8s Service data](./svc_information.txt) (20 pods)
+* [k8s Pod data](./pod_information.txt) (20 pods)
+* [pcap data of istio-proxy without any access](./istio-proxy.pcap)
+* [pcap data of istio-proxy with access to httpbin container every second](./istio-proxy-with-pod-access.pcap)
